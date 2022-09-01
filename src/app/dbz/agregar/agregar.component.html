@@ -1,0 +1,25 @@
+<h3>Agregar:
+
+    <small>{{nuevo.nombre}}</small>
+
+</h3>
+<hr>
+
+<form (submit)="Agregar()"><!--o ngSubmit $event interesa recibir el evento que se está reaizando -->
+
+    <input type="text" placeholder="Nombre del Personaje"
+    name="=nombre"
+    [(ngModel)]="nuevo.nombre"> 
+    <!-- [value]="nuevo.nombre"
+    (input)="cambiarNombre($event)" [value] Los corchetes son indican que hay componentes 
+        que se quieren enlazar -->
+    
+
+    <input type="text" placeholder="Poder del Personaje"
+    name="poder"
+    [(ngModel)]="nuevo.poder"> 
+
+    <button type="submit">Agregar</button><!-- (click) Los paréntesis son eventos -->
+
+</form>
+

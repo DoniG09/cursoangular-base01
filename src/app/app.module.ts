@@ -7,6 +7,8 @@ import { HeroeComponent } from './heroes/heroe/heroe.component';
 import { ListadoComponent } from './heroes/listado/listado.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador.module'; //Aquí
+import { MainPageComponent } from './dbz/main-page/main-page.component';
+import { DbzModule } from './dbz/dbz.module';//Aquí
 
 @NgModule({
 
@@ -21,7 +23,8 @@ import { ContadorModule } from './contador/contador.module'; //Aquí
 
     BrowserModule,
     HeroesModule,
-    ContadorModule //Aquí
+    ContadorModule, //Aquí
+    DbzModule//Aquí --> Carpeta Base
 
   ],
 
